@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTcwNTUxNDIzOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+}
+
+.container-maior {
+  margin-top: 15%;
+  margin-left: 35%;
+  background-color: black;
+  opacity: 0.8;
+  height: 40%;
+  width: 30%;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  overflow: auto;
+}
+
+.input-cidade {
+  padding: 12px;
+  background-color: #7c7c7c2b;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 20px;
+  width: 80%;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.img-lupa {
+  height: 16px;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-busca {
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: #7c7c7c2b;
+}
+
+.cidade {
+  margin-bottom: 20px;
+}
+
+.temperatura {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.container-menor {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tempo {
+  margin-left: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.umidade {
+  font-size: 20px;
+}
+
+#iconeBusca {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  .container-maior {
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 80%;
+    width: 90%;
+  }
+
+  .input-cidade {
+    width: 100%;
+    margin-right: 0;
+  }
+}

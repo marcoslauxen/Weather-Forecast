@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo-sol.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Previsão do Tempo</title>
+  </head>
+  <body>
+    <div class="container-maior">
+      <input
+        class="input-cidade"
+        type="text"
+        placeholder="Digite o nome da cidade"
+      />
+      <button class="btn-busca" onclick="capturarInput(); zerarInput();">
+        <img
+          class="img-lupa"
+          id="iconeBusca"
+          src="https://www.svgrepo.com/show/488200/find.svg"
+          alt="busca"
+        />
+      </button>
+
+      <h2 class="cidade">Tempo em:</h2>
+
+      <span class="temperatura">°C</span>
+
+      <div class="container-menor">
+        <img
+          class="tempo-img"
+          src="https://openweathermap.org/img/wn/04n.png"
+          alt="Img tempo"
+        />
+        <span class="tempo"></span>
+      </div>
+
+      <span class="umidade">Umidade: %</span>
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
